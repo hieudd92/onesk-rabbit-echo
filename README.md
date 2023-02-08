@@ -17,6 +17,7 @@ php artisan vendor:publish --provider="Onesk\RabbitEcho\ServiceProvider"
 
 ## Usage
 
+```
 $event = 'event name';
 $channel = 'channel';
 $type = 'public';
@@ -24,6 +25,7 @@ $message = 'new message';
 $data = [];
 
 app('rabbit-echo')->sendEvent($event, $channel, $type, $message, $data);
+```
 
 ## Security
 
